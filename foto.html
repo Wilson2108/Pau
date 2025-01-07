@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indice</title>
-    <link rel="stylesheet" href="style2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Foto</title>
+    <link rel="stylesheet" href="style3.css"> <!-- Ruta del CSS -->
 </head>
 <body>
-    <main>
-      <div class="navigation-arrows">
-        <button class="arrow next">&#x276F;</button>
+    <div class="navigation-arrows">
+        <button class="arrow prev">&#x276E;</button>
       </div>
-      <div class="candy-title">
-        ¡Nuestro primer mes juntos!
-      </div>
-      </main>
-      <script>
-        document.querySelector('.arrow.next').addEventListener('click', () => {
+    <div class="instax-photo-frame">
+        <div class="photo-content"></div> <!-- Contenedor de la foto -->
+        <div class="instax-caption">
+            <p>1 Mes</p> <!-- Texto debajo de la foto -->
+        </div>
+    </div>
+    <script>
+        document.querySelector('.arrow.prev').addEventListener('click', () => {
             // Aplica el efecto de desaparición con escala
             document.body.classList.add('slide-out-left');
     
@@ -26,6 +26,6 @@
                 window.location.href = 'carta.html'; // Navega a carta.html
             }, 500); // El tiempo coincide con la duración de la transición en CSS
         });
-      </script>
+    </script>
 </body>
 </html>

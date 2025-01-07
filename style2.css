@@ -16,10 +16,14 @@
     height: auto;
     max-width: 100%;
   }
-  
+
   body {
     margin: 0;
-    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fad7df; /* Fondo pastel */
   }
   
   h1,
@@ -171,8 +175,7 @@
     top: 1rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    pointer-events: none; /* Permite que los clics pasen solo a los botones */
+    justify-content: flex-end; /* Alinea las flechas hacia la derecha */
     z-index: 9999;
   }
   
@@ -199,22 +202,29 @@
     transform: scale(1.1);
   }
   
-  .arrow:focus {
-    outline: none;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-  }
-  
   .arrow.prev {
-    margin-left: 1rem;
+    display: none; /* Esconde el botón de "Anterior" si no está disponible */
   }
   
   .arrow.next {
     margin-right: 1rem;
   }
+
   
-  main {
-    padding: 2rem;
+.candy-title {
+    font-family: 'Pacifico', cursive; /* Fuente manuscrita elegante */
+    font-size: 4rem; /* Tamaño grande */
+    font-weight: 400;
     text-align: center;
+    color:  #fe3334; /* Color base blanco */
+  
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .candy-title:hover {
+    transform: scale(1.1); /* Agranda ligeramente */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 
+                 0 0 20px rgba(255, 200, 210, 0.8);
   }
 
   .slide-out-left {
@@ -242,3 +252,4 @@
       transition: background-color 0.3s ease-in-out;
     }
   }
+  

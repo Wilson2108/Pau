@@ -59,3 +59,31 @@ btnCloseElement.addEventListener('click', ()=> {
     heartElement.style.display = 'none'
   },500)
 })
+
+document.querySelector('.arrow.next').addEventListener('click', () => {
+  // Aplica el efecto de desaparición con escala
+  document.body.classList.add('slide-out-left');
+
+  // Espera que termine la animación antes de redirigir
+  setTimeout(() => {
+      window.location.href = 'foto.html'; // Navega a carta.html
+  }, 500); // El tiempo coincide con la duración de la transición en CSS
+});
+
+document.querySelector('.arrow.prev').addEventListener('click', () => {
+  // Aplica el efecto de desaparición con escala
+  document.body.classList.add('slide-out-left');
+
+  // Espera que termine la animación antes de redirigir
+  setTimeout(() => {
+      window.location.href = 'index.html'; // Navega a carta.html
+  }, 500); // El tiempo coincide con la duración de la transición en CSS
+});
+
+// document.querySelector('.arrow.prev').addEventListener('click', () => {
+//   window.location.href = 'index.html'; // Navega a index.html
+// });
+
+// document.querySelector('.arrow.next').addEventListener('click', () => {
+//   window.location.href = 'foto.html'; // Navega a foto.html
+// });
