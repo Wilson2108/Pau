@@ -34,7 +34,7 @@ body {
   .photo-content {
     width: 90%;
     height: 90%;
-    background-image: url('/carta_mes1/fotopau.jpg'); /* Usa la imagen deseada */
+    background-image: url('/fotopau.jpg'); /* Usa la imagen deseada */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
