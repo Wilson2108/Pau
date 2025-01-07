@@ -61,7 +61,7 @@
     position: absolute;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-top: 100px solid #fe3334;
+    border-top: 115px solid #fe3334;
     border-bottom: 100px solid transparent;
   
     /*  */
@@ -78,7 +78,7 @@
     z-index: -1;
     background: white;
     width: 390px;
-    height: 180px;
+    height: 200px;
   
     transition: all .75s;
   }
@@ -86,8 +86,8 @@
   .letter {
     border-left: 200px solid #ff989e;
     border-right: 200px solid #ff989e;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid #ff858a;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid #ff858a;
   }
   
   .options {
@@ -123,7 +123,7 @@
       top: 0;
     }
     100% {
-      top: -120px;
+      top: -170px;
     }
   }
   
